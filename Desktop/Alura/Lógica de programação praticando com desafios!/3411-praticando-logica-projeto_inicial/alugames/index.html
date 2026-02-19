@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KauanGames</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body class="body">
+    <main class="container main">
+      <img src="img\logoks.png" alt="Logo AluGames" />
+      <section class="divisor">
+        <div class="divisor__line"></div>
+        <img src="img/fade_bar.svg" alt="Visual bar" class="divisor__bar" />
+        <div class="divisor__line"></div>
+      </section>
+      <h1 class="page-title">
+        Aluguel <span class="page-title__emphasis">Sports Simulators</h1>
+      <section class="dashboard">
+        <ul class="dashboard__items">
+          <li class="dashboard__items__item" id="game-1">
+            <div class="dashboard__item__img">
+              <img src="img\2k26.jpeg" alt="NBA2k26" />
+            </div>
+            <p class="dashboard__item__name">NBA 2K26</p>
+            <a
+              onclick="alterarStatus(1, event)"
+              href="#"
+              class="dashboard__item__button"
+              >Alugar</a
+            >
+          </li>
+          <li class="dashboard__items__item" id="game-2">
+            <div class="dashboard__item__img">
+              <img src="img\fc.jpeg" alt="Capa jogo EA FC26" />
+            </div>
+            <p class="dashboard__item__name">EA FC26</p>
+            <a
+              onclick="alterarStatus(2, event)"
+              href="#"
+              class="dashboard__item__button"
+              >Alugar</a
+            >
+          </li>
+          <li class="dashboard__items__item" id="game-3">
+            <div class="dashboard__item__img dashboard__item__img--rented">
+              <img src="img\F125.jpeg" alt="F1 25" />
+            </div>
+            <p class="dashboard__item__name">F1 25</p>
+            <a
+              onclick="alterarStatus(3, event)"
+              href="#"
+              class="dashboard__item__button dashboard__item__button--return"
+              >Devolver</a
+            >
+          </li>
+        </ul>
+      </section>
+      <img src="img/hachuras.svg" alt="Visual hachuras" class="hachuras" />
+    </main>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
